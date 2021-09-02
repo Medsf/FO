@@ -8,48 +8,46 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+        <link href="../css/site.css" type="text/css" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-
-        <link href="./css/form.css">
-
     <title>Formulário</title>
 </head>
 
 <body>
-    <h2>Tela de Cadastro</h2>
+    <h2>Informações pessoais</h2>
+    <br>
  <div class="container">
     <form class="row g-3">
     <div class="col-md-6">
-        <label form="text">Nome completo</label>
+        <label form="text"><b>Nome completo</label></b>
         <input type="text" class="form-control" nome="email" placeholder="Digite seu nome" id="nome" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="text">Usario</label>
+        <label for="text"><b>Usuário</label></b>
         <input type="text" class="form-control" nome="usuario" placeholder="Digite o nome de usuario" id="usuario" required>
     </div>
     <br>
     <div class="col-md-12">
-        <label for="email">Email</label>
+        <label for="email"><b>Email</label></b>
         <input type="email" class="form-control" nome="email" placeholder="Digite seu email" id="email" required>
     </div>
     <br>
     <div class="col-md-12">
-        <label for="password">Senha</label>
+        <label for="password"><b>Senha</label></b>
         <input type="password" class="form-control" nome="senha" placeholder="Digite sua senha" id="senha" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="password">Confirmar senha</label>
+        <label for="password"><b>Confirmar senha</label></b>
         <input type="password" class="form-control" nome="confimar" placeholder="Confirmar a senha" id="confimar" required>
     </div>
     <br>
     <div class="col-md-6">
-    <label for="genero">Generos</label>
+    <label for="genero"><b>Genero</label></b>
     <select class="form-select" aria-label="Default select example">
         <option value="1">Feminino</option>
         <option value="2">Masculino</option>
@@ -58,50 +56,52 @@
     </div>
       <br>
       <div class="col-md-6">
-        <label for="date">Data de nascimento</label>
+        <label for="date"><b>Data de nascimento</label></b>
         <input type="date" class="form-control" id="date" required>
       </div>
       <br>
       <div class="col-md-6">
-        <label form="number">CPF</label>
+        <label form="number"><b>CPF</label></b>
         <input type="number" class="form-control" nome="cpf" placeholder="Digite seu cpf" id="cpf" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label form="telefone">Telefone</label>
+        <label form="telefone"><b>Telefone</label></b>
         <input type="tel" class="form-control" nome="telefone" placeholder="Digite seu telefone" id="tel" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="text">UF</label>
+        <label for="text"><b>UF</label></b>
         <input type="text" class="form-control" nome="uf" placeholder="Digite seu estado" id="uf" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="text">Cidade</label>
+        <label for="text"><b>Cidade</label></b>
         <input type="text" class="form-control" nome="cidade" placeholder="Digite sua cidade" id="cidade" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="text">Logradouro</label>
+        <label for="text"><b>Logradouro</label></b>
         <input type="text" class="form-control" nome="Logradouro" placeholder="Digite seu Logradouro" id="Logradouro" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="text">N°</label>
+        <label for="text"><b>N°</label></b>
         <input type="text" class="form-control" nome="numero" placeholder="Digite seu número" id="numero" required>
     </div>
     <br>
     <div class="col-md-6">
-        <label for="text">Complemento</label>
+        <label for="text"><b>Complemento</label></b>
         <input type="text" class="form-control" nome="complemento" placeholder="Casa,Bloco,Apart,etc..." id="complemento" required>
     </div>
     <br>
     <div class="col-12">
-        <button class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-primary" type="submit" onclick="validar()" >Enviar</button>
       </div>
     </form>
  </div>
+
+ <script src="../Js/site.Js"></script>
 </body>
 
 </html>
